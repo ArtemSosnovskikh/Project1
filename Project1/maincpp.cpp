@@ -105,7 +105,7 @@ int main()
 		std::cout << "неверный символ\n ";
 	}
 
-
+	std::cout << "f";
 
 
 
