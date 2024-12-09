@@ -70,7 +70,7 @@ int main()
 	double one, two;
 	char znak;
 
-	one = 0;
+	/*one = 0;
 	two = 0;
 	std::cout << "введите первое число:" << "\n";
 	std::cin >> one;
@@ -81,7 +81,7 @@ int main()
 	std::cin >> two;
 	if (two==0)
 		std::cout << "на ноль делить нельзя\n ";
-	else if (znak == '+')
+	 if (znak == '+')
 	{
 		std::cout << "сумма " << one + two << "\n";
 
@@ -98,17 +98,67 @@ int main()
 	}
 	else if (znak == '/')
 	{
-		std::cout << "деление " << one / two << "\n";
+		 if (two == 0)
+			 std::cout << "на ноль делить нельзя\n ";
+		 else std::cout << "деление " << one / two << "\n";
 
 	}
 	else {
 		std::cout << "неверный символ\n ";
 	}
+	 if (znak =='/' &&two !=0){}
+	 if(one < 0 ||one  > 10 ){}
+	
+		 
 
 
 
 
 
-
+*/
+	float dollar, euro, yuan, jena, farit;
+	float valuta, rubles;
+	dollar = 99;
+	euro = 106;
+	yuan = 13, 6;
+	jena = 0, 66;
+	farit = 37;
+	
+	std::cout << "Программа Конвертер валют" << "\n";
+	std::cout << "  У нас можно купить доллары , евро , юани , йены, фариты" << "\n";
+	std::cout << "ЦЕНЫ:" << "\n"<< "ЦЕНЫ:\n" << "доллар = 99 рублей\n " << "евро = 106 рублей\n " << "юань = 13,6  рублей \n " 
+		<< "йена = 0,66  рубля \n " << "фарит = 37 рублей \n ";
+	std::cout << "Банк берёт 5% комиссию за услугу!" << "\n";
+	std::cout << " сколько валюты хотите приобрести?" << "\n";
+	std::cin >> rubles;
+	std::cout << "Выберите валюту 1 - dollar, 2 -  euro,3 - yuan, 4 - jena,5 -  farit " << "\n";
+	std::cin >> valuta ;
+	
+	if (valuta == 1)
+	{
+		std::cout  << dollar*rubles* 0.95 << " рублей с учётом комиссии\n";
+		std::cout << "комиссия составила:" << dollar * rubles * 0.05 << "\n";
+	}
+	else if (valuta == 2)
+	{
+		std::cout << euro * rubles * 0.95 << " рублей с учётом комиссии \n";
+		std::cout << "комиссия составила:" << euro * rubles * 0.05 << "\n";
+	}
+	else if (valuta == 3)
+	{
+		std::cout << yuan * rubles * 0.95 << " рублей с учётом комиссии\n";
+		std::cout << "комиссия составила:" << yuan * rubles * 0.05 << "\n";
+	}
+	else if (valuta == 4)
+	{
+		std::cout << jena * rubles * 0.95 << " рублей с учётом комиссии\n";
+		std::cout << "комиссия составила:" << jena * rubles * 0.05 << "\n";
+	}
+	else if (valuta == 5)
+	{
+		std::cout << farit * rubles * 0.95 << " рублей с учётом комиссии \n";
+		std::cout << "комиссия составила:" << farit * rubles * 0.05 << "\n";
+	}
+	
 	return 0;
 }
