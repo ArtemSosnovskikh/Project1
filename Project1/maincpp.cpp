@@ -120,8 +120,8 @@ int main()
 	float valuta, rubles;
 	dollar = 99;
 	euro = 106;
-	yuan = 13, 6;
-	jena = 0, 66;
+	yuan = 13.6;
+	jena = 0.66;
 	farit = 37;
 	
 	std::cout << "Программа Конвертер валют" << "\n";
