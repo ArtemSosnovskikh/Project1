@@ -26,8 +26,8 @@ int main()
 	std::cout << one - two << "\n";
 	std::cout << one * two << "\n";
 	std::cout << one / two << "\n";
-	*/
-	/*double расстояние , время;
+	*/	
+/*double расстояние , время;
 	float скорость;
 	
 	std::cout <<  "введите расстояние \n";
@@ -67,10 +67,10 @@ int main()
 		std::cout << "повар";
 	}
 	*/
-	double one, two;
+	/*double one, two;
 	char znak;
 
-	/*one = 0;
+	one = 0;
 	two = 0;
 	std::cout << "введите первое число:" << "\n";
 	std::cin >> one;
@@ -116,6 +116,7 @@ int main()
 
 
 */
+	/*
 	float dollar, euro, yuan, jena, farit;
 	float valuta, rubles;
 	dollar = 99;
@@ -159,6 +160,52 @@ int main()
 		std::cout << farit * rubles * 0.95 << " рублей с учётом комиссии \n";
 		std::cout << "комиссия составила:" << farit * rubles * 0.05 << "\n";
 	}
+	*/
+	/* int a = 0;
+	int count;
+	std::cin >> count;
+	while(true)
+	{	while (a < count)
+	{
+		std::cout << a << "  ";
+		a++;
+		if (a == 5)
+		{
+			continue;
+
+			break; 
+		}
+		std::cout << " lol ";
+	}
+
+	}*/
+int a = 0;
+while (a < 5)
 	
+	{
+	std::cout << " 1 ";
+	a++;
+	} 
+for (int i = 0; i < 5; i++)
+
+
+do{}
+	while (true); 
+/*	for each (object var in collection_to_loop)*/
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
 	return 0;
 }
