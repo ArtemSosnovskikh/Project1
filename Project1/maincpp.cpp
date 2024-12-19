@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <Windows.h>
+#include <cstdlib>
 int main()
 
 
@@ -295,49 +296,77 @@ int main()
 
 	}
 	*/
+/*
+while (true)
+	{
+	std::cout << "						  решение кв уравнений             \n  ";
 
-std::cout << "                      решение кв уравнений               ";
+	std::cout << "  ax^2+bx=c=0   ";
 
-std::cout << "  ax^2+bx=c=0   ";
+	float a, b, c, d, x1, x2;
 
-float a, b, c, d, x1, x2;
+	std::cout << "введите A: \n   ";
 
-std::cout << "введите A:    ";
+	std::cin >> a;
 
-std::cin >> a;
+	std::cout << "введите B:\n    ";
 
-std::cout << "введите B:    " ;
+	std::cin >> b;
 
-std::cin >> b;
+	std::cout << "введите C: \n    ";
 
-std::cout << "введите C:    " ;
+	std::cin >> c;
 
-std::cin >> c;
+	std::cout << a << "x^2+" << b << "х+" << c << "=0 \n  ";
 
-std::cout << a << "x^2+"<< b << "х+"<<c <<"=0  ";
+	d = std::pow(b, 2) - (4 * a * c);
 
-d = std::pow(b, 2)-(4*a*c);
+	std::cout << a << " дискриминант:	\n " << d << "";
 
-std::cout << a << "дискриминант: " << d << "";
+	if (d < 0)
+	{
+		std::cout << "корней нет\n ";
+	}
 
-if (d<0)
+	else if (d == 0)
+	{
+		x1 = -b / (2 * a);
+		std::cout << "\n ваш корень равен:\n " << x1 << "\n   ";
+	}
+	else
+	{
+		x1 = (-b - std::sqrt(d)) / (2 * a);
+		x2 = (-b + std::sqrt(d)) / (2 * a);
+		std::cout << "ваш корень x1 равен:\n " << x1 << " \n   ";
+		std::cout << "ваш корень x2 равен:\n " << x2 << "  \n ";
+	}
+
+
+	system("pause");    
+	system("cls");
+		
+	}*/
+srand(time(NULL));
+int a;
+a = rand()%6+11;
+std::cout << a;
+/* игра угадай число
+* 2 уровня сложности 
+* 1 легкий 1-10
+* 2 сложный 1-500
+* легкий показывает колво попыток 
+* сложный 25 попыток 
+ сложный уровень имеет подсказку за 1жизнь 
+*/
+int magicnumber = 0, number = 0, count = 0, life = 0, choose = 0;
+
+while (true)
 {
-	std::cout << "корней нет";
-}
+	system("cls");
+	std::cout << "игра\" угадай число\"\n\n";
 
-else if (d==0)
-{
-	x1 = -b / (2 * a);
-	std::cout << "ваш корень равен:"<< x1<<"  ";
-}
-else 
-{
-	x1 = (-b - std::sqrt(d)) / (2 * a);
-	x2 = (-b + std::sqrt(d)) / (2 * a);
-	std::cout << "ваш корень x1 равен:" << x1 << "  ";
-	std::cout << "ваш корень x2 равен:" << x2 << "  ";
-}
 
+}
 
 
 
