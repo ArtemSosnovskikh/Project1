@@ -6,6 +6,7 @@ int main()
 
 {
 	setlocale(LC_ALL, "ru");
+	srand(time(NULL));
 	/*
 	std::cout << "hello world " << 13*2 + 4<< std::endl<< "\n";
 	std::cout << "privet\n"<< 321<< "\n" ;
@@ -194,7 +195,7 @@ int main()
 	while (true); */
 	/*	for each (object var in collection_to_loop)*/
 
-	/*int a = 0;
+/*int a = 0;
 	int b=0;
 	std::cin >> a;
 	while (true)
@@ -208,7 +209,7 @@ int main()
 
 	}
 	}*/
-	/*float s1, s2, ves, k = 0, s, nado;
+/*float s1, s2, ves, k = 0, s, nado;
 	float bak = 300, ostatok = 0, maxdistanse = 0;
 	while (true)
 	{
@@ -346,6 +347,7 @@ while (true)
 	system("cls");
 		
 	}*/
+/*
 srand(time(NULL));
 int a;
 a = rand()%6+11;
@@ -357,7 +359,7 @@ std::cout << a;
 * легкий показывает колво попыток 
 * сложный 25 попыток 
  сложный уровень имеет подсказку за 1жизнь 
-*/
+
 int magicnumber = 0, number = 0, count = 0, life = 0, choose = 0;
 
 while (true)
@@ -368,8 +370,48 @@ while (true)
 
 }
 
+*/
+//отладчик
+int min = INT_MIN;
+int max = INT_MAX;
+int const size = 10;
+int Arr[size];
+int i = 0;
+while (i < size)
+{
+	Arr[i] = rand()%10 - 5;
+	std::cout << Arr[i] << " ";
+	
+	i++;
+	
+
+	
+}
 
 
+std::cout  << "\n ";
+for (int i = 0; i < size; i++)
+{
+	if (Arr[i] < 0)
+		std::cout << Arr[i] << " ";
+}
 
+
+std::cout << "\n ";
+for (int i = 0; i < size; i++)
+{
+	if (Arr[i] > 0)
+		std::cout << Arr[i] << " ";
+}
+std::cout << "\n ";
+int b = 0;
+for (int i = 0; i < size; i++)
+{
+	if (Arr[i] == 0)
+		b++;
+		
+
+}
+std::cout << b;
 	return 0;
 }
