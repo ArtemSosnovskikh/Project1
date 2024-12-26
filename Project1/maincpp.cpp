@@ -371,7 +371,8 @@ while (true)
 }
 
 */
-//отладчик
+//МАССИВ
+/*
 int min = INT_MIN;
 int max = INT_MAX;
 int const size = 10;
@@ -379,7 +380,7 @@ int Arr[size];
 int i = 0;
 while (i < size)
 {
-	Arr[i] = rand()%10 - 5;
+	Arr[i] = rand()%11 - 5;
 	std::cout << Arr[i] << " ";
 	
 	i++;
@@ -413,5 +414,23 @@ for (int i = 0; i < size; i++)
 
 }
 std::cout << b;
-	return 0;
+*/
+int i = 1;
+while (i < 5)
+{
+	std::cout << " =  =  =  =  ="<< "\n";
+	i++;
+}
+
+for (int i = 0; i < 4; i++)
+{
+	for (int y = 0; y < 5; y++)
+	{
+
+		std::cout << "  =";
+
+	}
+	std::cout << "\n";
+}
+return 0;
 }
